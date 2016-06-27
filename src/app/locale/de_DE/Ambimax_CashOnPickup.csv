@@ -1,0 +1,3 @@
+"Cash On Pickup", "Barzahlung bei Abholung"
+"Pickup", "Abholung"
+"<strong style=""color:#eb5e00"">This payment method is only visible when pickup carrier is enabled (System > Carriers > Pickup) and selected by your customer during checkout!</strong>","<strong style=""color:#eb5e00"">Diese Zahlungsmethode ist nur sichtbar, wenn die Versandmethode Abholung aktiviert ist (System > Versandarten > Abholung) und der Kunde diese während des Bestellvorgangs auswählt!</strong>"

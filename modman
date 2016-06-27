@@ -1,0 +1,3 @@
+src/app/code/community/Ambimax/CashOnPickup                            app/code/community/Ambimax/CashOnPickup
+src/app/etc/modules/Ambimax_CashOnPickup.xml                           app/etc/modules/Ambimax_CashOnPickup.xml
+src/app/locale/de_DE/Ambimax_CashOnPickup.csv                          app/locale/de_DE/Ambimax_CashOnPickup.csv
