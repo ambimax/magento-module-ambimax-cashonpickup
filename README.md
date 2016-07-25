@@ -9,12 +9,6 @@ For installation use composer or copy files manually.
 
 ### composer
 ```
-"repositories": [
-    {
-        "type": "vcs",
-        "url": "https://github.com/ambimax/magento-module-ambimax-cashonpickup"
-    }
-],
 "require": {
     "ambimax/magento-module-ambimax-cashonpickup": "~1.0"
 }
@@ -32,8 +26,8 @@ Translations need to be done in every store view
 
 ## License
 
-MIT / BSD
+[MIT License](http://choosealicense.com/licenses/mit/)
 
 ## Author Information
 
- - Tobias Schifftner, [@tschifftner](https://twitter.com/tschifftner)
+ - [Tobias Schifftner](https://twitter.com/tschifftner), [ambimax® GmbH](https://www.ambimax.de)
