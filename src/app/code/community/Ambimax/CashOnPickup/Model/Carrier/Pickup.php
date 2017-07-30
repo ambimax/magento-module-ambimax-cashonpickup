@@ -12,7 +12,7 @@ class Ambimax_CashOnPickup_Model_Carrier_Pickup
      * @param Mage_Shipping_Model_Rate_Request $request
      * @return Mage_Shipping_Model_Rate_Result
      */
-    public function collectRates(Mage_Shipping_Model_Rate_Request $request)
+    public function collectRates(Mage_Shipping_Model_Rate_Request $request) // @codingStandardsIgnoreLine
     {
         /** @var Mage_Shipping_Model_Rate_Result $result */
         $result = Mage::getModel('shipping/rate_result');
