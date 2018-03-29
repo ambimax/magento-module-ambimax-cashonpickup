@@ -37,7 +37,7 @@ class Ambimax_CashOnPickup_Model_Carrier_Pickup
         $rate->setMethodTitle($this->getConfigData('method_title'));
         $rate->setPrice($this->getConfigData('price'));
         $rate->setCost(0);
-        
+
         return $rate;
     }
 
