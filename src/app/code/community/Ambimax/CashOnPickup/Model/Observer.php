@@ -7,9 +7,9 @@ class Ambimax_CashOnPickup_Model_Observer
         if ( !Mage::getStoreConfigFlag('payment/ambimax_cashonpickup/rewrite_shipping_adress_enabled') ) {
             return false;
         }
+        
         /** @var Mage_Sales_Model_Order $order */
         $order = $observer->getOrder();
-
 
         if ( $order->getShippingMethod() !== 'ambimax_cashonpickup_standard' ) {
             return;
@@ -25,8 +25,6 @@ class Ambimax_CashOnPickup_Model_Observer
             ->setStreet($this->getImprintValue('street', $storeId))
             ->setCity($this->getImprintValue('city', $storeId))
             ->setPostcode($this->getImprintValue('zip', $storeId));
-
-
     }
 
     public function getImprintValue($path, $storeId)
