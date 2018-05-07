@@ -21,6 +21,17 @@
                 <class>Ambimax_CashOnPickup_Model</class>
             </ambimax_cashonpickup>
         </models>
+        <events>
+            <sales_order_save_before>
+                <observers>
+                    <change_shipping_address_on_pickup>
+                        <type>singleton</type>
+                        <class>Ambimax_CashOnPickup_Model_Observer</class>
+                        <method>changeShippingAddressOnPickup</method>
+                    </change_shipping_address_on_pickup>
+                </observers>
+            </sales_order_save_before>
+        </events>
     </global>
     <adminhtml>
         <translate>
