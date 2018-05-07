@@ -2,6 +2,11 @@
 
 class Ambimax_CashOnPickup_Model_Observer
 {
+    /**
+     * @param Varien_Event_Observer $observer
+     * @return bool|void
+     * @throws Varien_Exception
+     */
     public function changeShippingAddressOnPickup(Varien_Event_Observer $observer)
     {
         if ( !Mage::getStoreConfigFlag('payment/ambimax_cashonpickup/rewrite_shipping_adress_enabled') ) {
@@ -27,6 +32,11 @@ class Ambimax_CashOnPickup_Model_Observer
             ->setPostcode($this->getImprintValue('zip', $storeId));
     }
 
+    /**
+     * @param $path
+     * @param $storeId
+     * @return mixed
+     */
     public function getImprintValue($path, $storeId)
     {
         return Mage::getStoreConfig('general/imprint/' . $path, $storeId);
